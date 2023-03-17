@@ -1,13 +1,15 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 #include <stdio.h>
+/* more headers goes there */
+
 /* betty style doc for function main goes there */
+
 /**
- * main - main function
+ * main -determines if a number is positive, negative or zero
  *
- * return: always 0
- * */
+ * return: always 0 
+ */
 
 int main(void)
 {
@@ -20,8 +22,8 @@ int main(void)
 		printf("%d is positive", n);
 	else if (n == 0)
 		printf("%d is zero", n);
-	else if (n < 0)
+	else
 		printf("%d is negative", n);
-	printf("\n);
+	printf("\n");
 	return (0);
 }
