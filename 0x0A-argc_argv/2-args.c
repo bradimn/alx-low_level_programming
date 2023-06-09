@@ -3,17 +3,18 @@
 
 /**
  * main - prints all arguments it receives
- * argc: arguments numebr
- * argv: all arguments
+ * @argc: arguments numebr
+ * @argv: all arguments
  *
  * Return: 0
  */
 
 int main(int argc, char *argv[])
 {
-	for(int j = 0; j < argc; j++)
+	int j;
+	for(j = 0; j < argc; j++)
 	{
-		printf("%s\n", argv[i]);
+		printf("%s\n", argv[j]);
 	}
 	return (0);
 }
