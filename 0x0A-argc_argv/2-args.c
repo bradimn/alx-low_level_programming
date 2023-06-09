@@ -6,7 +6,7 @@
  * @argc: arguments numebr
  * @argv: all arguments
  *
- * Return: 0
+ * Return: Always 0 (Success)
  */
 
 int main(int argc, char *argv[])
