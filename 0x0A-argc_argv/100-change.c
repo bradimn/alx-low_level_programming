@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	if (argc == 2)
 	{
 		n = atoi(argv[1]);
-		if (nu > 0)
+		if (n > 0)
 		{
 			for (; n >= 25; chang++)
 			{
