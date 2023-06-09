@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	int chang, n;
 
-	change = 0;
+	chang = 0;
 
 	if (argc == 2)
 	{
