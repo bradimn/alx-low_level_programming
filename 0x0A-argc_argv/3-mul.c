@@ -1,21 +1,28 @@
 #include <stdio.h>
-#include "main.h"
+#include <stdlib.h>
 
 /**
- * main - prints all arguments it receives
- * @argc: number of arguments
- * @argv: array of arguments
- *
- * Return: Always 0 (Success)
- */
+  * main - prints  name, followed by new.
+  * @argc: arguments counter.
+  * @argv: argument vector.
+  * Return: 0,  error return 1.
+  */
 int main(int argc, char *argv[])
 {
-	int i;
+	int j, mul = 1;
 
-	for (i = 0; i < argc; i++)
+	if (argc > 1 && (argc - 1) == 2)
 	{
-		printf("%s\n", argv[i]);
+		for (j = 1; j < argc; j++)
+		{
+			mul *= atoi(argv[j]);
+		}
+		printf("%d\n", mul);
 	}
-
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
 	return (0);
 }
