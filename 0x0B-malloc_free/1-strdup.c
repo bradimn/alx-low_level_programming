@@ -14,15 +14,20 @@ char *_strdup(char *str)
 	int len = 0;
 	int i;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	while (str[len] != '\0')
 	{
 		len++;
 	}
-	if (len == 0)
+	arr = malloc((sizeof(char) * len) + 1);
+	if (arr == NULL)
 	{
 		return (NULL);
 	}
-	arr = malloc((sizeof(char) * len) + 1);
 	for (i = 0; i < len; i++)
 	{
 		arr[i] = str[i];
